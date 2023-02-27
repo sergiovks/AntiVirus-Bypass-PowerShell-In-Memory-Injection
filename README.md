@@ -3,7 +3,7 @@ Script made for bypassing antivirus using Powershell Injection method. Place you
 
 [VirusTotal Scan 19/59](https://www.virustotal.com/gui/file/449a8fa6c25894a068b31a62399fda83093cdf430cad98ef579dd70d39df0907/detection)
 
-<h3>Before running the script you have to set the ExecutionPolicy to unrestricted:</h3>
+<h3>Before running the script you have to set the ExecutionPolicy of the target machine to unrestricted:</h3>
 
 ```
 powershell.exe
